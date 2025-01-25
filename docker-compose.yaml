@@ -1,0 +1,15 @@
+services:
+  pfl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pfl
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      # - /app/node_modules # Prevent conflicts with local node_modules
+    stdin_open: true # Keep stdin open for real-time interaction
+    tty: true # Allocate a pseudo-TTY for logs
+
+    command: ["sh", "-c", "pnpm install && pnpm run dev"]
