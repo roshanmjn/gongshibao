@@ -1,7 +1,6 @@
 import { Layout, Button } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
 
 const { Header } = Layout;
 
@@ -23,14 +22,14 @@ const navList: {
 ];
 
 export default () => {
-    const [drawerVisible, setDrawerVisible] = useState(false);
-    const showDrawer = () => {
-        setDrawerVisible(true);
-    };
+    // const [drawerVisible, setDrawerVisible] = useState(false);
+    // const showDrawer = () => {
+    //     setDrawerVisible(true);
+    // };
 
-    const closeDrawer = () => {
-        setDrawerVisible(false);
-    };
+    // const closeDrawer = () => {
+    //     setDrawerVisible(false);
+    // };
     return (
         <Header
             style={{
@@ -45,7 +44,7 @@ export default () => {
         >
             <div className="flex h-full w-full items-center justify-between px-6">
                 {/* Mobile Hamburger Button */}
-                <Button type="primary" icon={<MenuOutlined />} onClick={showDrawer} className="block sm:hidden" />
+                <Button type="primary" icon={<MenuOutlined />} className="block sm:hidden" />
 
                 {/* Desktop Menu */}
                 <nav className="hidden w-full items-center justify-between sm:flex">
