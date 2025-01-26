@@ -8,5 +8,5 @@ export default defineConfig({
     //   host: true,
     //   port: 5173,
     // },
-    base: "https://roshanmjn.github.io/",
+    base: "/gongshibao/",
 });
