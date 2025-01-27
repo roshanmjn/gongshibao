@@ -6,7 +6,7 @@ import Projects from "./Projects";
 
 const App: React.FC = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/gongshibao">
             <Routes>
                 <Route path="/" element={<HomeLayout />}>
                     <Route index element={<Home />} />
